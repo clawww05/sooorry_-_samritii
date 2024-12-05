@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, Samriti!</title>
+
+    <!-- Preventing Instagram from showing a preview -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="  ">
+    <meta property="og:description" content="  ">
+    <meta property="og:image" content="https://example.com/1x1pixel.png"> <!-- Replace with a non-descriptive image or a transparent placeholder image -->
+    <meta property="og:url" content="https://example.com/yourpage"> <!-- Replace with your page URL -->
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://images.playground.com/c59c31fa-bb0e-4233-a680-7384d894f3ef.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);  
+            z-index: -1;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .slide h1, .slide p {
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+        }
+
+        button {
+            background: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <!-- Slide 1: Apology Message -->
+        <div class="slide active" id="slide1">
+            <h1>Pyaari Pyaaari Samritiiii Diduuuuu🥰🥰,</h1>
+            <p>"Yrr bohtt jyadaa aur bdii gltii ki h is baaar pr sch vaisa koi mtlb nahi thaa mera, bohttt yaaad aati h teriii, pleaseeeeeeee wapiss aaja. abse kuch aisaa nahi krungaa, sb chizz ka dhyaan rkhungaa. pleaseeeee behnnnn aaja naaa. sb pachtawaa ho gyaa h aurr bohtt acchi tarah samajh aa gyaa h, Pleaseeee bhenn aajaaaa. maanta hu thod, thoda nahiii , bhott bura hu, pr yr ksm se kuch aisa intention nahi tha mera, vyadaa krta hu abse sb dhyaan rkhungaa, jbse baat bnd ki h tune yrr nahi mn lgtaa khi aur na he kisi se baat krne ka mn krta jyada, pleaseee samritiii, aaaajaa behhnnn , aisee thodii khtm hota h yrr sb kuchh, dono sath mei krte h na baat tohh krte h sb sahiii, prr pehelee aaa tohh sahiiiii pleaseeeeeeeee❤️</p>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- Slide 2: Nostalgic Chats -->
+        <div class="slide" id="slide2">
+            <h1>Yaadd h ??? 💗🌷</h1>
+            <img src="tempweb.jpg" alt="Chat Screenshot">
+            <h2>Phirsee kre??🥺</h2>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- Slide 3: Mistakes and Apology -->
+        <div class="slide" id="slide3">
+            <h1>behnn jitni gltiyaa ki h aaj tk </h1>
+            <p>1.Chize bhull jataa bohtt</p>
+            <p>2.Chotii Choti baato pr naraz kr deta </p>
+            <p>3.jb tu naraz thi toh meine dusra topic shuru krdiyaa tha </p>
+            <p>4.boht pehele gc mei likh diya tha ki tu koi advice mt de kisi ko </p>
+            <p>5.Birthday pr puure 12 bje message nahi kiyaa </p>
+            <p>6.Bts ko tb gc mei ulta seedha bola mei</p>
+            <p>7.tu naraz hoti toh khud bura maan kr baith jataa </p>
+            <p>ye sb to boht km h, is se bohtt jyadaa gltiyaa krkee naraz kiya h tujhe bohtt baar </p>
+            <h2>in sabko sudhaar rhaa hu yrrr, abse toh kuch aisaa nahi hogaa, pleaseeee samrtiiiii aaj, chota smjhh kr maaf krde, nahi krunga aisa kuch kbhii</h2>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- New Slide 4: Apology Message -->
+        <div class="slide" id="slide4">
+            <h1> behnnn🙂</h1>
+            <p>️ Samritii Behnn pleaseee aaaja, nahiii mn lgtaa yr tere binaa kisii kaam meii, pleaseee aaja , mantaa hu thii merii gltii, aurr sb sahii krunga, pr pehelee aaa tohh yrrrr😭😭😭😭, pleaseee samritiii sb sahiii krtee h na yr baat krkee sathh mei, aise thodii khtmm hotaa kuchh reyy, pleaseee aajaaaa🙂</p>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- Slide 5: Yes/No Dialogue -->
+        <div class="slide" id="slide5">
+            <h1>Pleaseee is gadhe chotuuu ko maaf krdooo 🥺🥺</h1>
+            <button onclick="showFinalSlide()">Yeh bhi koi puchne ki baat h🙂, Krr diyaa🥰</button>
+            <button onclick="reloadDialog()">Nahi, abhi mei aur naraz hu 😠😠</button>
+        </div>
+
+        <!-- Slide 6: Final Apology Message -->
+        <div class="slide" id="slide6">
+            <h1>ThankssssYouuu youu Diduuuuu😭😭😭</h1>
+            <p>Bhenn abse hr chizz ka khyaal rkhungaa, kum se kum gltii krungaa😅😅, prr tu maan gyii bohttt bohttt jyadaaa thankssssssssssss shukriyaaaa dhnyawaaadddddd😭😭😭😭, abse mtt hona aisee gusaaa🙂 ab hone bhii nhii dungaaa🥰</p>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+
+        function nextSlide() {
+            // Hide current slide
+            document.getElementById(`slide${currentSlide}`).classList.remove('active');
+            
+            // Increment slide number
+            currentSlide++;
+
+            // Check if next slide exists, then show it
+            const nextSlideId = `slide${currentSlide}`;
+            const nextSlideElement = document.getElementById(nextSlideId);
+            
+            if (nextSlideElement) {
+                nextSlideElement.classList.add('active');
+            }
+        }
+
+        function reloadDialog() {
+            alert("Pleaseee Diduuuuu🥺🥺🥺");
+        }
+
+        function showFinalSlide() {
+            document.getElementById(`slide5`).classList.remove('active');
+            document.getElementById(`slide6`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
